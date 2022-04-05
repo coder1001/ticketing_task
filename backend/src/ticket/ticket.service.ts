@@ -2,8 +2,8 @@ import { CreateTicketDto } from './dto/create-ticket.dto';
 import { UpdateTicketDto } from './dto/update-ticket.dto';
 import { Ticket } from './interfaces/ticket.interface';
 import { v4 as uuidv4 } from 'uuid';
-import { createBarcode } from 'src/utils/barcodeService';
-import { EventService } from 'src/event/event.service';
+import { createBarcode } from '../utils/barcodeService';
+import { EventService } from '../event/event.service';
 import {
   forwardRef,
   HttpException,

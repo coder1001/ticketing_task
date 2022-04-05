@@ -1,18 +1,17 @@
 import { Test, TestingModule } from '@nestjs/testing';
+import { EventService } from '../event/event.service';
 import { TicketService } from './ticket.service';
 
 describe('TicketService', () => {
-  let service: TicketService;
+  let ticketService: TicketService;
+  let eventService: EventService;
 
   beforeEach(async () => {
-    const module: TestingModule = await Test.createTestingModule({
-      providers: [TicketService],
-    }).compile();
-
-    service = module.get<TicketService>(TicketService);
+    eventService = new EventService();
+    ticketService = new TicketService(eventService);
   });
 
   it('should be defined', () => {
-    expect(service).toBeDefined();
+    expect(ticketService).toBeDefined();
   });
 });
