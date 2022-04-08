@@ -1,6 +1,6 @@
 import { CreateTicketDto } from './dto/create-ticket.dto';
 import { UpdateTicketDto } from './dto/update-ticket.dto';
-import { Ticket } from './interfaces/ticket.interface';
+import { Ticket } from './entities/ticket.entity';
 import { v4 as uuidv4 } from 'uuid';
 import { createBarcode } from '../utils/barcodeService';
 import { EventService } from '../event/event.service';
@@ -78,6 +78,8 @@ export class TicketService {
         ...ticket,
         ...updateTicketDto,
       };
+
+      return this.tickets[ticketIndex];
     } else {
       throw new HttpException(
         {

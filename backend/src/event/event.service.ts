@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { CreateEventDto } from 'src/event/dto/create-event.dto';
-import { Event } from './interfaces/event.interface';
+import { Event } from './entities/event.entity';
 import { v4 as uuidv4 } from 'uuid';
 import { UpdateEventDto } from 'src/event/dto/update-event.dto';
 
@@ -8,7 +8,7 @@ import { UpdateEventDto } from 'src/event/dto/update-event.dto';
 export class EventService {
   private readonly events: Event[] = [];
 
-  create(createEventDto: CreateEventDto) {
+  create(createEventDto: CreateEventDto): Event {
     const newEvent = {
       id: uuidv4(),
       ...createEventDto,
