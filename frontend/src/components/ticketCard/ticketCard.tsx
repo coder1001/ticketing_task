@@ -1,8 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router';
 import styles from './style';
-import { Event } from '../../../../backend/src/event/interfaces/event.interface';
-import { Ticket } from '../../../../backend/src/ticket/interfaces/ticket.interface';
+import { Event } from '../../../../backend/src/event/entities/event.entity';
+import { Ticket } from '../../../../backend/src/ticket/entities/ticket.entity';
 import moment from 'moment-timezone';
 import {
   Card,

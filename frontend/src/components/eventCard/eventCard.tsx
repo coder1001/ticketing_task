@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router';
 import styles from './style';
-import { Event } from '../../../../backend/src/event/interfaces/event.interface';
+import { Event } from '../../../../backend/src/event/entities/event.entity';
 import moment from 'moment-timezone';
 import {
   Card,

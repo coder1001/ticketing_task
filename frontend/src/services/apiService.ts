@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { Event } from '../../../backend/src/event/interfaces/event.interface';
-import { Ticket } from '../../../backend/src/ticket/interfaces/ticket.interface';
+import { Event } from '../../../backend/src/event/entities/event.entity';
+import { Ticket } from '../../../backend/src/ticket/entities/ticket.entity';
 interface CreateTicketDto {
   firstName?: string;
   lastName?: string;

@@ -6,7 +6,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import axios from 'axios';
 import TicketCard from '../../components/ticketCard/ticketCard';
-import { Event } from '../../../../backend/src/event/interfaces/event.interface';
+import { Event } from '../../../../backend/src/event/entities/event.entity';
 import styles from './style';
 import { useParams } from 'react-router';
 
@@ -18,7 +18,7 @@ import DateAdapter from '@mui/lab/AdapterMoment';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import DateTimePicker from '@mui/lab/DateTimePicker';
 import moment, { Moment } from 'moment-timezone';
-import { Ticket } from '../../../../backend/src/ticket/interfaces/ticket.interface';
+import { Ticket } from '../../../../backend/src/ticket/entities/ticket.entity';
 import * as apiService from '../../services/apiService';
 
 import { useNavigate } from 'react-router-dom';

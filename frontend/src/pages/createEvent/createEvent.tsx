@@ -6,7 +6,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import axios from 'axios';
 import EventCard from '../../components/eventCard/eventCard';
-import { Event } from '../../../../backend/src/event/interfaces/event.interface';
+import { Event } from '../../../../backend/src/event/entities/event.entity';
 import styles from './style';
 
 import Button from '@mui/material/Button';

@@ -6,7 +6,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import axios from 'axios';
 import EventCard from '../../components/eventCard/eventCard';
-import { Event } from '../../../../backend/src/event/interfaces/event.interface';
+import { Event } from '../../../../backend/src/event/entities/event.entity';
 import { useNavigate } from 'react-router-dom';
 import Container from '@mui/material/Container';
 import styles from './style';

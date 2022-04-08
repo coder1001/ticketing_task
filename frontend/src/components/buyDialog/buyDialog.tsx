@@ -7,7 +7,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import axios from 'axios';
-import { Event } from '../../../../backend/src/event/interfaces/event.interface';
+import { Event } from '../../../../backend/src/event/entities/event.entity';
 
 import * as apiService from '../../services/apiService';
 
